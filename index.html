@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bookshelf apps</h1>
+        <form id="cariBuku">
+            <input type="text" id="_cariBuku" placeholder="cari buku..">
+            <button type="submit" id="submitCari">Cari</button>
+        </form>
+    </header>
+
+    <main>
+        <section class="masukan-buku-baru">
+            <h3>Masukan Buku Baru</h3>
+            <form id="inputBuku">
+                <div class="input">
+                    <label for="inputBookTitle">Judul buku</label><br>
+                    <input id="inputBookTitle" type="text" placeholder="judul buku">
+                </div>
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis Buku</label><br>
+                    <input id="inputBookAuthor" type="text" placeholder="penulis buku">
+                </div>
+                <div class="input">
+                    <label for="inputBookYear">Tahun</label><br>
+                    <input id="inputBookYear" type="number" placeholder="tahun rilis buku">
+                </div>
+                <div class="inputinline">
+                    <input id="inputBookIsComplete" type="checkbox">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                </div>
+                <button type="submit" id="submitBuku">Masukan ke list buku</button>
+            </form>
+        </section>
+
+        <section class="book-shelf" id="Belum-selesai-dibaca">
+            <h3>Belum Selesai dibaca</h3>
+        </section>
+
+        <section class="book-shelf" id="selesai-dibaca">
+            <h3>Selesai dibaca</h3>
+        </section>
+    </main>
+    <footer>@Licence Muhammad Abduh Husaini Batubara</footer>
+
+    <div id="modal">
+        <p>"<span></span>" akan dihapus secara permaen</p>
+        <p>Kamu tidak dapat mengembalikannya lagi </p>
+        <div class="action-delete">
+            <button class="grey" id="grey">kembali</button>
+            <button class="red-delete" id="delete">Hapus Task</button>
+        </div>
+    </div>
+    <script src="assets/js/dataStorage.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/dom.js"></script>
+
+</body>
+
+</html>

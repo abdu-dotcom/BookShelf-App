@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>form>input {
+    width: 280px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border: 0.5px solid black;
+}
+
+header>form>button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2AB2FF;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.masukan-buku-baru {
+    width: 25%;
+    margin: 0 10px 0 40px;
+    padding: 20px;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+#Belum-selesai-dibaca,
+#selesai-dibaca {
+    width: 37.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Belum-selesai-dibaca {
+    border-radius: 4px;
+    border: 1px solid #2AB2FF;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+#selesai-dibaca {
+    border-radius: 4px;
+    border: 1px solid #207B00;
+    padding: 20px;
+    margin: 0 40px 0 10px;
+}
+
+.masukan-buku-baru>h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+#Belum-selesai-dibaca>h3 {
+    text-align: center;
+    margin: 20px;
+    color: #2AB2FF;
+}
+
+#selesai-dibaca>h3 {
+    text-align: center;
+    margin: 20px;
+    color: #207B00;
+}
+
+.masukan-buku-baru>form>.input {
+    width: auto;
+    margin: 20px 0;
+}
+
+.masukan-buku-baru>form>.input>label {
+    font-weight: 600;
+}
+
+.masukan-buku-baru>form>.input>input {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    height: 50px;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+
+.masukan-buku-baru>form>.inputinline {
+    margin: 12px 0;
+    align-items: center;
+}
+
+.masukan-buku-baru>form>button {
+    float: right;
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin: 30px 0;
+    border-radius: 4px;
+    color: white;
+    background-color: #2AB2FF;
+}
+
+
+/* CSS #Belum-selesai-dibaca */
+
+article {
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+    padding: 20px 0;
+}
+
+article>.action>button {
+    width: auto;
+    height: 30px;
+    border: none;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+    margin: 5px 10px 0 0;
+    padding: 5px 5px;
+}
+
+article>.action>.blue {
+    background-color: #2AB2FF;
+}
+
+article>.action>.red {
+    background-color: #D85A5A;
+}
+
+article>.action>.green {
+    background-color: #207B00;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    background-color: rgb(54, 134, 238);
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 55px 40px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+#modal>p:nth-child(1) {
+    font-weight: 600;
+}
+
+#modal>.action-delete {
+    margin: 15px 0;
+}
+
+#modal>.action-delete>.grey {
+    width: 90px;
+    height: 30px;
+    background-color: rgb(187, 187, 187);
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#modal>.action-delete>.red-delete {
+    width: 90px;
+    height: 30px;
+    background-color: rgb(187, 187, 187);
+    border: none;
+    background-color: #D85A5A;
+    color: white;
+    cursor: pointer;
+}
